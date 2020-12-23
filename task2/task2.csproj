@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CalculateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalculateForm.Designer.cs">
+      <DependentUpon>CalculateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConstructForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConstructForm.Designer.cs">
+      <DependentUpon>ConstructForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +66,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CalculateForm.resx">
+      <DependentUpon>CalculateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConstructForm.resx">
+      <DependentUpon>ConstructForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -76,12 +94,31 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="task2.zip" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Decor\510x510resize_product18677_26_1356318184.jpg" />
+    <Content Include="Resources\Decor\510x510resize_product19064_6_1356342222.jpg" />
+    <Content Include="Resources\Decor\510x510resize_product19360_41_1356410884.jpg" />
+    <Content Include="Resources\Decor\510x510resize_product19400_39_1356412875.jpg" />
+    <Content Include="Resources\Decor\510x510resize_product19905_39_1356491005.jpg" />
+    <Content Include="Resources\Decor\510x510resize_product20687_32_1356682995.jpg" />
+    <Content Include="Resources\Decor\510x510resize_product94442_43_1369728249.jpg" />
+    <Content Include="Resources\Decor\510x510resize_product94443_57_1369728296.jpg" />
+    <Content Include="Resources\Flat\510x510resize_product15955_74_1355886433.jpg" />
+    <Content Include="Resources\Flat\510x510resize_product16101_95_1355889740.jpg" />
+    <Content Include="Resources\Flat\510x510resize_product16121_57_1355889907.jpg" />
+    <Content Include="Resources\Flat\510x510resize_product16122_47_1355889931.jpg" />
+    <Content Include="Resources\Flat\510x510resize_product16153_50_1355890644.jpg" />
+    <Content Include="Resources\Flat\510x510resize_product16164_31_1355890748.jpg" />
+    <Content Include="Resources\Flat\510x510resize_product16188_79_1355891226.jpg" />
+    <Content Include="Resources\Flat\510x510resize_product16241_8_1355891889.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
